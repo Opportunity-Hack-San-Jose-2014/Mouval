@@ -1,4 +1,5 @@
 <?php
+include("relevance.php");
 // This is the API, 2 possibilities: show the app list or show a specific app by id.
 // This would normally be pulled from a database but for demo purposes, I will be hardcoding the return values.
 function get_db_result($query){
@@ -99,6 +100,15 @@ function get_by_zip($keyword,$zip,$phone_number){
    $q=build_query($keyword,$location1);
    
   $res=get_db_result($q);
+  echo " ".$keyword;
+  $count =mysqli_num_rows($res);
+  echo $count;
+  if (mysqli_num_rows($res) == 0) {    	
+   $keyword=get_relevance($keyword);
+   $q=build_query($keyword,$location1);   
+   $res=get_db_result($q);
+  }
+  
   $send_message="";
   while($row = mysqli_fetch_array($res)) {
                 
