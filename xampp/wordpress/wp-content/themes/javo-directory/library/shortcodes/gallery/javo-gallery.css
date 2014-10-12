@@ -1,0 +1,202 @@
+#javo-gall .controls{
+  padding: 2%;
+  background: #333;
+  color: #eee;
+}
+
+#javo-gall label{
+  font-weight: 300;
+  margin: 0 .4em 0 0;
+}
+
+#javo-gall button{
+  display: inline-block;
+  padding: .4em 1em;
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #bbb;
+  font-size: 12px;
+  cursor: pointer;
+  margin-right:2px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#javo-gall button.gallery-terms-btn{margin-right:5px;}
+#javo-gall .gallery-sort-btn{float:right;}
+#javo-gall button:hover, #javo-gall button.active{
+  color:#fff;
+   border:1px solid #000 !important;
+   background:#454545;
+}
+#javo-gall .javo-gallery-navi{ padding:5px 0;}
+#javo-gall button:focus{
+  outline: 0 none;
+}
+
+#javo-gall button + label{
+  margin-left: 1em;
+}
+
+#javo-gall{
+  padding: 2% 0;
+  text-align: justify;
+  font-size: 0.1px;
+  /* background: #68b8c4; */
+  
+  -webkit-backface-visibility: hidden;
+}
+
+#javo-gall:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+#javo-gall .mix,
+#javo-gall .gap{
+  display: inline-block;
+  width: 49%;
+}
+
+#javo-gall .mix{
+  text-align: left;
+  background: #03899c;
+  display: none;
+}
+
+#javo-gall .mix.category-1{
+  border-top: 2px solid limegreen;
+}
+
+#javo-gall .mix.category-2{
+  border-top: 2px solid yellow;
+}
+
+
+
+@media all and (min-width: 420px){
+  #javo-gall .mix,
+  #javo-gall .gap{
+    width: 32%;
+  }
+}
+
+@media all and (min-width: 640px){
+  #javo-gall .mix,
+  #javo-gall .gap{
+    width: 23.5%;
+	margin-right: 14px;
+  }
+}
+#javo-gall .javo-gallery{letter-spacing:0px;}
+#javo-gall .javo-gallery .mix{
+	background:none;
+	position:relative;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+#javo-gall .javo-left-overlay {font-size:14px;}
+#javo-gall .javo-left-overlay i {font-size:12px;}
+#javo-gall .javo-gallery-wrap {overflow:hidden;}
+
+#javo-gall .javo-gallery .mix img{
+	z-index: 9;
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+	position:relative;
+}
+
+
+#javo-gall .javo-gallery .mix:hover img{
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+#javo-gall .javo-gallery-term-content-title{
+	font-family:'Oswald';
+	font-weight:300;
+	letter-spacing:0.5px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	line-height:30px;
+	padding:5px 10px 7px 10px;
+	color:rgba(255,255,255,1);
+	z-index:10;
+	font-size:15px;
+	width:100%;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	text-transform:uppercase;
+	line-height:20px;
+	background-image: -webkit-linear-gradient(transparent, rgba(0,0,0,0.6));
+	background-image: linear-gradient(transparent, rgba(0,0,0,0.6));
+}
+#javo-gall .javo-gallery .mix:hover .javo-gallery-term-content-title{
+}
+#javo-gall .javo-gallery-term-content-title span{}
+
+#javo-gall .javo-gallery-shadow{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0);
+	z-index:10;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+}
+#javo-gall .javo-gallery .mix:hover .javo-gallery-shadow{
+	background:rgba(0,0,0,0.7);
+}
+#javo-gall .javo-gallery .mix .javo-gallery-term-content-inform{
+	position:absolute;
+	text-align:center;
+	top:15%;
+	width:100%;
+	z-index:10;
+	color:rgba(255,255,255,0);
+	font-weight: bold;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-ms-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+	opacity:0;
+}
+
+#javo-gall .javo-gallery .mix:hover .javo-gallery-term-content-inform{
+	color:rgba(255,255,255,1);
+	top:40%;
+	opacity:1;
+}
+
+#javo-gall .javo-gallery .mix .javo-gallery-term-content-inform .javo-gallery-term-content-rating{
+	font-size:20px;
+	margin: -15px 0 0;
+}
+
+#javo-gall .javo-gallery .mix .javo-gallery-term-content-inform .javo-gallery-term-content-category{
+	font-size:16px;
+	text-transform:uppercase;
+	font-family:'Oswald';
+	line-height:25px;
+	font-weight: 500;
+}
+
+#javo-gall .javo-gallery-term-content-category,
+#javo-gall .javo-gallery-term-content-rating{line-height:40px;}

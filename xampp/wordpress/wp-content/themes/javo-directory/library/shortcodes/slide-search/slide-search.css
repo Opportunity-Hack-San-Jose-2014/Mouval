@@ -1,0 +1,336 @@
+/****************************
+**//*  Horizontal Style *//**
+*****************************/
+
+#javo-slide-search{left:-15px;}
+#javo-slide-search .item{height:400px; overflow:hidden;}
+#javo-slide-search .item-author-info img, #javo-slide-search .item-author-info .rating_score, #javo-slide-search .item-author-info .event_info,  #javo-slide-search .item-author-info .event_info img {width:80px; height:80px; border-radius:50px;}
+#javo-slide-search .item-author-info .rating_score {background: transparent; font-size: 20px; border:3px solid #fff; color:#fff; padding: 19px 0 0 0;}
+#javo-slide-search .item-author-info .event_info {background: transparent; font-size: 20px; border:3px solid #fff; color:#fff; padding:5px;}
+
+
+#javo-slide-search .item-author-info {
+	position: absolute;
+	/* right: 29%; */
+	left: 70%;
+	padding-bottom: 35px;
+	bottom: -4px;
+}
+#javo-slide-search .carousel-caption h2 {
+	font-size:25px; 
+	color:#fff; 
+	padding:0 20px; 
+	border:3px solid #fff; 
+	margin-top: 15px;
+	line-height:1.8;
+	font-weight:500;
+	font-family:'Oswald';
+	letter-spacing:1px;
+}
+#javo-slide-search .carousel-caption p {font-size:20px; color:#fff;}
+
+
+#javo-slide-search .slider-search-box .inner_wrap {position:relative;}
+#javo-slide-search .slider-search-box .inner_wrap form{
+	position:absolute;
+	width:100%;
+	text-align:center;
+	z-index:11;
+	top:80px;
+}
+#javo-slide-search .slider-search-box .navbar-form .btn-group ul.dropdown-menu li .btn{text-align:left;}
+
+#javo-slide-search .javo-offer-area-content{
+	display:table;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+#javo-slide-search .javo-offer-area-content > div{
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+	font: .7em / .9em "Arial Black", Gadget, sans-serif;
+	/* background: rgba(255, 255, 255, 0.3); */
+}
+
+
+
+#javo-slide-search .slider-search-box .inner_wrap form .slider-search-part-wrap{
+	display:inline-block;
+	padding:15px;
+	background: rgba(255, 255, 255, 0.7);
+	border-radius: 3px;
+}
+
+#javo-slide-search .item a .carousel-caption{
+	bottom:0;
+	right:auto;
+	left:5%;
+	z-index:11;
+	padding-bottom:30px;
+}
+#javo-slide-search .item a .carousel-caption:over{
+	color:#ccc;
+}
+
+#javo-slide-search .javo-slider-search-meta{
+	color: #fff;
+	font-size: 1.8em;
+	margin-bottom: 0px;
+	text-align: left;
+	padding-left:20px;
+	line-height:1;
+	font-family: 'Oswald';
+	font-weight: 500;
+	letter-spacing: 1px;
+} 
+
+
+
+.item-author-info> .col-md-4>a>div, .item-author-info> .col-md-4>a>img{position:relative; z-index:11;}
+.slider-search-box .slider-search-part-wrap .btn-group ul.dropdown-menu{ left:auto; top:50px;}
+
+
+.slider-search-box .slider-search-part-wrap .btn-group .dropdown-menu:before{border-bottom-color:#fff;}
+
+#javo-slide-search .carousel-indicators{bottom:55px;}
+#javo-slide-search .carousel-control>i{
+	-webkit-transform:scale(0.5,1);
+	top:50%;
+	position:absolute;
+	display:inline-block;
+	color:#fff;
+}
+
+#javo-slide-search .carousel-control{
+	background:none;
+	opacity:1;
+	z-index:10;
+	width:5%;
+}
+
+
+#javo-slide-search .carousel-control.left>i{
+	left:50%;
+}
+#javo-slide-search .carousel-control.right>i{
+	right:50%;
+}
+
+.slide-search-bottom-shadow{
+	position: absolute;
+	height: 15%;
+	width: 100%;
+	bottom: 0;
+	background-image: -webkit-linear-gradient(transparent, rgba(0,0,0,0.6));
+	background-image: linear-gradient(transparent, rgba(0,0,0,0.6));
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#CC000000', GradientType=0);";
+	z-index:10;
+}
+#javo-slide-search .javo-this-filter li{list-style:none;}
+
+#javo-box-bg-search .carousel-indicators,
+#javo-slide-search .carousel-indicators{z-index:10;}
+
+/****************************
+**//*  Vertical Style *//****
+*****************************/
+#javo-box-bg-search{left:-15px;}
+#javo-box-bg-search .item{height:700px; overflow:hidden;}
+#javo-box-bg-search .item-author-info img, #javo-box-bg-search .item-author-info .rating_score, #javo-box-bg-search .item-author-info .event_info,  #javo-box-bg-search .item-author-info .event_info img {width:80px; height:80px; border-radius:50px;}
+#javo-box-bg-search .item-author-info .rating_score {
+	background: #fff; 
+	font-size: 20px; 
+	padding: 20px 0 0 0px;
+}
+#javo-box-bg-search .item-author-info .event_info {background: #fff; font-size: 20px;}
+
+
+#javo-box-bg-search .item-author-info {
+	position: absolute;
+	left: 70%;
+	padding-bottom: 35px;
+	bottom: -4px;
+	z-index:12;
+}
+#javo-box-bg-search .background-slide-title h3 {font-size:37px; color:#fff;}
+#javo-box-bg-search .background-slide-title p {font-size:20px; color:#fff;}
+
+
+#javo-box-bg-search .backgroundr-search-box .inner_wrap {position:relative;}
+
+#javo-box-bg-search .backgroundr-search-box .inner_wrap form{
+	position:absolute;
+	width:100%;
+	text-align:center;
+	z-index:15;
+	top:80px;
+}
+
+#javo-box-bg-search .javo-offer-area-content{
+	display: table;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	max-width: 60px;
+}
+#javo-box-bg-search .javo-offer-area-content > div{
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+	font: .7em / .9em "Arial Black", Gadget, sans-serif;
+}
+
+
+
+#javo-box-bg-search .backgroundr-search-box .inner_wrap form .backgroundr-search-part-wrap{
+	display:inline-block;
+	padding:15px;
+	background: rgba(0,0,0,0.5);
+}
+
+
+#javo-box-bg-search .item a .background-slide-title:hover{
+	color:#ccc;
+}
+.item-author-info> .col-md-4>a>div, .item-author-info> .col-md-4>a>img{position:relative; z-index:14;}
+.backgroundr-search-box .backgroundr-search-part-wrap .btn-group ul.dropdown-menu{right:0; left:auto; top:50px;}
+
+
+.backgroundr-search-box .backgroundr-search-part-wrap .btn-group .dropdown-menu:before{border-bottom-color:#fff;}
+
+#javo-box-bg-search .carousel-indicators{bottom:55px;}
+#javo-box-bg-search .carousel-control>i{
+	-webkit-transform:scale(0.5,1);
+	top:50%;
+	position:absolute;
+	display:inline-block;
+	color:#eee;
+}
+
+#javo-box-bg-search .carousel-control{
+	background:none;
+	opacity:1;
+	z-index:14;
+	width:5%;
+}
+
+
+#javo-box-bg-search .carousel-control.left>i{
+	left:50%;
+}
+#javo-box-bg-search .carousel-control.right>i{
+	right:50%;
+}
+
+#javo-box-bg-search .javo-this-filter li{list-style:none;}
+
+
+
+
+
+#javo-box-bg-search .background-search-box .inner_wrap form{
+	position:absolute;
+	background:#000;
+	z-index:9;
+	top:15%;
+	right:15%;
+	background-color: rgba(10, 10, 10, 0.7);
+	text-align:center;
+	max-width:350px;
+	padding:30px;
+	border: 1px solid #666;
+	border-radius: 3px;	
+}
+#javo-box-bg-search .background-search-box .inner_wrap form h3{
+	color:#fff; 
+	font-size:25px; 
+	font-weight:bold;
+	margin:0;
+	margin-bottom:10px;
+}
+#javo-box-bg-search .background-search-box .inner_wrap form .slider-search-part-wrap>.btn-group,
+#javo-box-bg-search .background-search-box .inner_wrap form .slider-search-part-wrap>.form-group{
+	width:100%; 
+	margin-bottom:10px; 
+}
+#javo-box-bg-search .background-search-box .inner_wrap form .slider-search-part-wrap>.btn-group button,
+#javo-box-bg-search .background-search-box .inner_wrap form .slider-search-part-wrap>.form-group>input{width:100%;}
+#javo-box-bg-search .background-search-box .inner_wrap form .search-part-inner-text{
+	width:100%; 
+	margin-bottom:15px; 
+	color:#fff;
+	font-size:14px;
+}
+#javo-box-bg-search .background-search-box .inner_wrap form .btn-group ul{
+	width:100%; 
+	margin:0; 
+	border-radius:0px;
+	border-color:#adadad;
+}
+#javo-box-bg-search .background-search-box .inner_wrap form .btn-group .dropdown-menu:before{content:none;}
+#javo-box-bg-search .background-search-box .inner_wrap form .slider-search-part-wrap>input{
+	padding:5px 20px 5px 20px; 
+	font-size:16px;
+}
+#javo-box-bg-search .carousel-inner .slide-bg-images{position:relative;}
+#javo-box-bg-search .carousel-inner .slide-bg-images>a{
+	position:absolute; 
+	top:15%;
+	left:15%; 
+	z-index:9;
+	text-transform:uppercase;
+	max-width:40%;
+	height:auto;
+} 
+#javo-box-bg-search .carousel-inner .slide-bg-images>.javo-slider-search-meta{
+	position:absolute; 
+	top:25%;
+	left:15%; 
+	z-index:9;
+	color:#fff;
+	font-size:2.2em;
+} 
+
+.item-author-info .col-md-4 .item-author-info-circle-border{
+	position:absolute; 
+	width:80px; 
+	height:80px; 
+	top:0; 
+	border:10px solid #ddd;
+	border-radius:50px;
+	z-index:16;
+}
+
+#javo-slide-search .item-author-info .event_info .item-author-info-circle-border{top:-3px; left:-3px;}
+#javo-box-bg-search .background-slide-title {border:3px solid #fff; padding: 0px 15px;}
+#javo-box-bg-search h3 {margin-top:3px;}
+
+/** slider fade effect **/
+#javo-slide-search .carousel-inner .item {
+  left: 0 !important;
+  -webkit-transition: opacity .3s; /*adjust timing here */
+     -moz-transition: opacity .3s;
+       -o-transition: opacity .3s;
+          transition: opacity .3s;
+}
+/* Fade controls with items */
+#javo-slide-search .carousel-inner .item.next.left,
+#javo-slide-search .carousel-inner .item.prev.right {
+    opacity: 1;
+    z-index: 1;
+}
+#javo-slide-search .carousel-inner .item.active.left,
+#javo-slide-search .carousel-inner .item.active.right {
+    opacity: 0;
+    z-index: 2;
+}
+
+
+/* #javo-slide-search .navbar-form {display:none;} */
+
+
+.slider-search-part-wrap .form-control, .slider-search-part-wrap .dropdown-toggle {width:200px;}
+.slider-search-part-wrap .form-control, .slider-search-part-wrap .btn-default {border:1px solid #aaa;}
