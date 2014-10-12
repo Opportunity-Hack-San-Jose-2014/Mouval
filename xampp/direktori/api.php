@@ -74,13 +74,21 @@ function build_query($keyword,$location){
 }
 function get_by_zip($keyword,$zip,$phone_number){
 	$country="";
-   if(strcmp ( substr($phone_number,0,3), "+62")){
-	   	$country="Indonesia";	
-   }else if(strcmp ( substr($phone_number,0,3), "+62")){	
-      	$country="US";	
+	echo $phone_number;
+#   if(strcmp ( strstr($phone_number,0,2), "+1") == 0){	   
+   if( substr($phone_number,0,2) === "+1"){	   
+   		echo "inside if";
+   		
+   		$phone=substr($phone_number,2);
+   		echo $phone_number;
+	   	$country="US";	
+   }elseif( substr($phone_number,0,3) === "+62"){
+   		echo "inside else";   		
+   		$phone=substr($phone_number,3);
+      	$country="Indonesia";	
    }
-   $details_url = "https://maps.googleapis.com/maps/api/geocode/json?address=" .$zip.$country."&key=AIzaSyDT2_1dWMCEpbnNKEDR4HcPoSKZWXER354";
-    
+   $details_url = "https://maps.googleapis.com/maps/api/geocode/json?address=" .$zip."+".$country."&key=AIzaSyDT2_1dWMCEpbnNKEDR4HcPoSKZWXER354";
+    echo $details_url."<br>";
    $ch = curl_init();
    curl_setopt($ch, CURLOPT_URL, $details_url);
    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -90,7 +98,7 @@ function get_by_zip($keyword,$zip,$phone_number){
    curl_close($ch);  
    $q=build_query($keyword,$location1);
    
-     $res=get_db_result($q);
+  $res=get_db_result($q);
   $send_message="";
   while($row = mysqli_fetch_array($res)) {
                 
@@ -113,7 +121,7 @@ function get_by_zip($keyword,$zip,$phone_number){
     fwrite($myfile, $msg);
     fclose($myfile);
   echo $send_message;
-  send_message($send_message,$phone_number);	
+  send_message($send_message,$phone);	
 
 }
 
