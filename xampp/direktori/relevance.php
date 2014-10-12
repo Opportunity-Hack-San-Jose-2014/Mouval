@@ -16,11 +16,23 @@ $business_array = array("word_db" =>"business",
                 "b" => "industry",
                 "c" => "information technology",
                 "d" =>"factory");
+$craft_array = array("word_db" =>"Kerajinan & Kesenian",
+                "a" => "craft",
+                "b" => "hand craft",
+                "c" => "wood work",
+                "d" =>"local works");
 foreach ($restaurant_array as $restaurant_word){
     if ($word == $restaurant_word){
         return $restaurant_array['word_db'];
     }
 }
+
+foreach ($craft_array as $craft_word){
+    if ($word == $craft_word){
+        return $craft_array['word_db'];
+    }
+}
+
 foreach ($clothing_array as $clothing_word){
 if ($word == $clothing_word){
         return $clothing_array['word_db'];
